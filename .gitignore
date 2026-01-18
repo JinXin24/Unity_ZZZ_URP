@@ -1,0 +1,11 @@
+# 忽略 Unity 子项目里的缓存大文件
+Unity_ZZZ_URP/Library/
+Unity_ZZZ_URP/Temp/
+Unity_ZZZ_URP/Obj/
+Unity_ZZZ_URP/Build/
+
+# 忽略系统/IDE 生成的文件
+*.sln
+*.csproj
+.DS_Store
+Thumbs.db
