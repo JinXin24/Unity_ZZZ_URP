@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1001,
+    "info": "待机",
+    "anm_name": "idle",
+    "on_anm_end": 0,
+    "on_move": [
+      1,
+      1,
+      1002
+    ]
+  },
+  {
+    "id": 1002,
+    "info": "",
+    "anm_name": "",
+    "on_anm_end": 0,
+    "on_move": []
+  }
+]
