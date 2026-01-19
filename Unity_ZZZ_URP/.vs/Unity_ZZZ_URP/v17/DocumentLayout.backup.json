@@ -3,20 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Calm\\Desktop\\computer\\project\\Unity_ZZZ_URP\\ZZZ\\Unity_ZZZ_URP\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D8D71CE0-9832-7E80-5F01-C174E8735134}|Assembly-CSharp.csproj|c:\\users\\calm\\desktop\\computer\\project\\unity_zzz_urp\\zzz\\unity_zzz_urp\\assets\\zzz\\script\\datamgr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D8D71CE0-9832-7E80-5F01-C174E8735134}|Assembly-CSharp.csproj|solutionrelative:assets\\zzz\\script\\datamgr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D8D71CE0-9832-7E80-5F01-C174E8735134}|Assembly-CSharp.csproj|C:\\Users\\Calm\\Desktop\\computer\\project\\Unity_ZZZ_URP\\ZZZ\\Unity_ZZZ_URP\\assets\\zzz\\script\\table\\tbplayerstates.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D8D71CE0-9832-7E80-5F01-C174E8735134}|Assembly-CSharp.csproj|solutionrelative:assets\\zzz\\script\\table\\tbplayerstates.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D8D71CE0-9832-7E80-5F01-C174E8735134}|Assembly-CSharp.csproj|c:\\users\\calm\\desktop\\computer\\project\\unity_zzz_urp\\zzz\\unity_zzz_urp\\assets\\zzz\\script\\table\\demo\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D8D71CE0-9832-7E80-5F01-C174E8735134}|Assembly-CSharp.csproj|solutionrelative:assets\\zzz\\script\\table\\demo\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D8D71CE0-9832-7E80-5F01-C174E8735134}|Assembly-CSharp.csproj|c:\\users\\calm\\desktop\\computer\\project\\unity_zzz_urp\\zzz\\unity_zzz_urp\\assets\\zzz\\script\\test\\newbehaviourscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D8D71CE0-9832-7E80-5F01-C174E8735134}|Assembly-CSharp.csproj|solutionrelative:assets\\zzz\\script\\test\\newbehaviourscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8D71CE0-9832-7E80-5F01-C174E8735134}|Assembly-CSharp.csproj|c:\\users\\calm\\desktop\\computer\\project\\unity_zzz_urp\\zzz\\unity_zzz_urp\\assets\\zzz\\script\\table\\tbplayerstates.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8D71CE0-9832-7E80-5F01-C174E8735134}|Assembly-CSharp.csproj|solutionrelative:assets\\zzz\\script\\table\\tbplayerstates.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{738C56CB-2B74-952A-CFA1-BA1E8F41F13C}|Assembly-CSharp-Editor.csproj|C:\\Users\\Calm\\Desktop\\computer\\project\\Unity_ZZZ_URP\\ZZZ\\Unity_ZZZ_URP\\assets\\jinxinframework\\luban\\editor\\lubanmenuitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,33 +30,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "item.cs",
-              "DocumentMoniker": "C:\\Users\\Calm\\Desktop\\computer\\project\\Unity_ZZZ_URP\\ZZZ\\Unity_ZZZ_URP\\Assets\\ZZZ\\Script\\Table\\demo\\item.cs",
-              "RelativeDocumentMoniker": "Assets\\ZZZ\\Script\\Table\\demo\\item.cs",
-              "ToolTip": "C:\\Users\\Calm\\Desktop\\computer\\project\\Unity_ZZZ_URP\\ZZZ\\Unity_ZZZ_URP\\Assets\\ZZZ\\Script\\Table\\demo\\item.cs",
-              "RelativeToolTip": "Assets\\ZZZ\\Script\\Table\\demo\\item.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvxcAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-19T17:47:38.239Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "DataMgr.cs",
-              "DocumentMoniker": "C:\\Users\\Calm\\Desktop\\computer\\project\\Unity_ZZZ_URP\\ZZZ\\Unity_ZZZ_URP\\Assets\\ZZZ\\Script\\DataMgr.cs",
-              "RelativeDocumentMoniker": "Assets\\ZZZ\\Script\\DataMgr.cs",
-              "ToolTip": "C:\\Users\\Calm\\Desktop\\computer\\project\\Unity_ZZZ_URP\\ZZZ\\Unity_ZZZ_URP\\Assets\\ZZZ\\Script\\DataMgr.cs",
-              "RelativeToolTip": "Assets\\ZZZ\\Script\\DataMgr.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-19T17:42:38.556Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "NewBehaviourScript.cs",
               "DocumentMoniker": "C:\\Users\\Calm\\Desktop\\computer\\project\\Unity_ZZZ_URP\\ZZZ\\Unity_ZZZ_URP\\Assets\\ZZZ\\Script\\Test\\NewBehaviourScript.cs",
               "RelativeDocumentMoniker": "Assets\\ZZZ\\Script\\Test\\NewBehaviourScript.cs",
@@ -83,14 +49,14 @@
               "RelativeDocumentMoniker": "Assets\\ZZZ\\Script\\Table\\TbPlayerStates.cs",
               "ToolTip": "C:\\Users\\Calm\\Desktop\\computer\\project\\Unity_ZZZ_URP\\ZZZ\\Unity_ZZZ_URP\\Assets\\ZZZ\\Script\\Table\\TbPlayerStates.cs",
               "RelativeToolTip": "Assets\\ZZZ\\Script\\Table\\TbPlayerStates.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAADwvxIAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-19T17:37:59.331Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "LubanMenuItem.cs",
               "DocumentMoniker": "C:\\Users\\Calm\\Desktop\\computer\\project\\Unity_ZZZ_URP\\ZZZ\\Unity_ZZZ_URP\\Assets\\JinXinFramework\\Luban\\Editor\\LubanMenuItem.cs",
               "RelativeDocumentMoniker": "Assets\\JinXinFramework\\Luban\\Editor\\LubanMenuItem.cs",
