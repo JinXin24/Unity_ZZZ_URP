@@ -13,9 +13,9 @@ using SimpleJSON;
 
 namespace cfg
 {
-public sealed partial class PlayerStates : Luban.BeanBase
+public sealed partial class PlayerStateData : Luban.BeanBase
 {
-    public PlayerStates(JSONNode _buf) 
+    public PlayerStateData(JSONNode _buf) 
     {
         { if(!_buf["id"].IsNumber) { throw new SerializationException(); }  Id = _buf["id"]; }
         { if(!_buf["info"].IsString) { throw new SerializationException(); }  Info = _buf["info"]; }
@@ -24,9 +24,9 @@ public sealed partial class PlayerStates : Luban.BeanBase
         { var __json0 = _buf["on_move"]; if(!__json0.IsArray) { throw new SerializationException(); } OnMove = new System.Collections.Generic.List<int>(__json0.Count); foreach(JSONNode __e0 in __json0.Children) { int __v0;  { if(!__e0.IsNumber) { throw new SerializationException(); }  __v0 = __e0; }  OnMove.Add(__v0); }   }
     }
 
-    public static PlayerStates DeserializePlayerStates(JSONNode _buf)
+    public static PlayerStateData DeserializePlayerStateData(JSONNode _buf)
     {
-        return new PlayerStates(_buf);
+        return new PlayerStateData(_buf);
     }
 
     /// <summary>
@@ -50,7 +50,7 @@ public sealed partial class PlayerStates : Luban.BeanBase
     /// </summary>
     public readonly System.Collections.Generic.List<int> OnMove;
    
-    public const int __ID__ = -88392605;
+    public const int __ID__ = -490446374;
     public override int GetTypeId() => __ID__;
 
     public  void ResolveRef(Tables tables)

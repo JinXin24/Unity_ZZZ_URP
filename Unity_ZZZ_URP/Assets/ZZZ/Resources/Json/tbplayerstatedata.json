@@ -12,8 +12,8 @@
   },
   {
     "id": 1002,
-    "info": "",
-    "anm_name": "",
+    "info": "跑",
+    "anm_name": "run",
     "on_anm_end": 0,
     "on_move": []
   }
