@@ -5,7 +5,7 @@ using UnityEngine;
 public class DataMgr : BaseManager<DataMgr>
 {
     // 全局配置表对象，其他脚本直接用这个就行
-    public static TbPlayerStateData playerStateData;
+    public TbPlayerStateData playerStateData;
 
     private DataMgr()
     {

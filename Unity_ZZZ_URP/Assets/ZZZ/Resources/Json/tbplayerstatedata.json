@@ -2,19 +2,289 @@
   {
     "id": 1001,
     "info": "待机",
-    "anm_name": "idle",
+    "anm_name": "Idle",
     "on_anm_end": 0,
     "on_move": [
       1,
       1,
-      1002
+      10021
+    ],
+    "do_move": 0,
+    "on_stop": 0,
+    "on_evade": [
+      10031,
+      10032
+    ],
+    "on_atk": [
+      1,
+      1,
+      10051
     ]
   },
   {
-    "id": 1002,
+    "id": 10021,
+    "info": "待机衔接跑",
+    "anm_name": "Run_Start",
+    "on_anm_end": 10022,
+    "on_move": [],
+    "do_move": 1,
+    "on_stop": 10023,
+    "on_evade": [
+      10031,
+      10032
+    ],
+    "on_atk": [
+      1,
+      1,
+      10051
+    ]
+  },
+  {
+    "id": 10022,
     "info": "跑",
-    "anm_name": "run",
+    "anm_name": "Run",
     "on_anm_end": 0,
-    "on_move": []
+    "on_move": [],
+    "do_move": 1,
+    "on_stop": 10023,
+    "on_evade": [
+      10031,
+      10032
+    ],
+    "on_atk": [
+      1,
+      1,
+      10051
+    ]
+  },
+  {
+    "id": 10023,
+    "info": "跑衔接待机",
+    "anm_name": "Run_End",
+    "on_anm_end": 1001,
+    "on_move": [
+      1,
+      1,
+      10021
+    ],
+    "do_move": 0,
+    "on_stop": 0,
+    "on_evade": [
+      10031,
+      10032
+    ],
+    "on_atk": [
+      1,
+      1,
+      10051
+    ]
+  },
+  {
+    "id": 10031,
+    "info": "向前,左,右,后闪避",
+    "anm_name": "Evade_Front",
+    "on_anm_end": 1001,
+    "on_move": [
+      0,
+      0.3,
+      10022
+    ],
+    "do_move": 0,
+    "on_stop": 0,
+    "on_evade": [],
+    "on_atk": [
+      1,
+      1,
+      10051
+    ]
+  },
+  {
+    "id": 10032,
+    "info": "无输入闪避",
+    "anm_name": "Evade_Back",
+    "on_anm_end": 1001,
+    "on_move": [
+      0,
+      0.5,
+      10022
+    ],
+    "do_move": 0,
+    "on_stop": 0,
+    "on_evade": [],
+    "on_atk": [
+      1,
+      1,
+      10051
+    ]
+  },
+  {
+    "id": 10051,
+    "info": "普攻1",
+    "anm_name": "Normal_Attack_1",
+    "on_anm_end": 10052,
+    "on_move": [],
+    "do_move": 0,
+    "on_stop": 0,
+    "on_evade": [],
+    "on_atk": [
+      0,
+      0.9,
+      10061
+    ]
+  },
+  {
+    "id": 10052,
+    "info": "普攻1_结束",
+    "anm_name": "Normal_Attack_1_End",
+    "on_anm_end": 1001,
+    "on_move": [
+      1,
+      1,
+      10021
+    ],
+    "do_move": 0,
+    "on_stop": 0,
+    "on_evade": [],
+    "on_atk": [
+      1,
+      1,
+      10051
+    ]
+  },
+  {
+    "id": 10061,
+    "info": "普攻2",
+    "anm_name": "Normal_Attack_2",
+    "on_anm_end": 10062,
+    "on_move": [],
+    "do_move": 0,
+    "on_stop": 0,
+    "on_evade": [],
+    "on_atk": [
+      0,
+      0.9,
+      10071
+    ]
+  },
+  {
+    "id": 10062,
+    "info": "普攻2_结束",
+    "anm_name": "Normal_Attack_2_End",
+    "on_anm_end": 1001,
+    "on_move": [
+      1,
+      1,
+      10021
+    ],
+    "do_move": 0,
+    "on_stop": 0,
+    "on_evade": [],
+    "on_atk": [
+      1,
+      1,
+      10051
+    ]
+  },
+  {
+    "id": 10071,
+    "info": "普攻3",
+    "anm_name": "Normal_Attack_3",
+    "on_anm_end": 10072,
+    "on_move": [],
+    "do_move": 0,
+    "on_stop": 0,
+    "on_evade": [],
+    "on_atk": [
+      0,
+      0.9,
+      10081
+    ]
+  },
+  {
+    "id": 10072,
+    "info": "普攻3_结束",
+    "anm_name": "Normal_Attack_3_End",
+    "on_anm_end": 1001,
+    "on_move": [
+      1,
+      1,
+      10021
+    ],
+    "do_move": 0,
+    "on_stop": 0,
+    "on_evade": [],
+    "on_atk": [
+      1,
+      1,
+      10051
+    ]
+  },
+  {
+    "id": 10081,
+    "info": "普攻4",
+    "anm_name": "Normal_Attack_4",
+    "on_anm_end": 10082,
+    "on_move": [],
+    "do_move": 0,
+    "on_stop": 0,
+    "on_evade": [],
+    "on_atk": [
+      0,
+      0.9,
+      10091
+    ]
+  },
+  {
+    "id": 10082,
+    "info": "普攻4_结束",
+    "anm_name": "Normal_Attack_4_End",
+    "on_anm_end": 1001,
+    "on_move": [
+      1,
+      1,
+      10021
+    ],
+    "do_move": 0,
+    "on_stop": 0,
+    "on_evade": [],
+    "on_atk": [
+      1,
+      1,
+      10051
+    ]
+  },
+  {
+    "id": 10091,
+    "info": "普攻4_Perfect",
+    "anm_name": "Normal_Attack_4_Perfect",
+    "on_anm_end": 10092,
+    "on_move": [],
+    "do_move": 0,
+    "on_stop": 0,
+    "on_evade": [],
+    "on_atk": [
+      0,
+      0.9,
+      10051
+    ]
+  },
+  {
+    "id": 10092,
+    "info": "普攻4_Perfect_End",
+    "anm_name": "Normal_Attack_4_Perfect_End",
+    "on_anm_end": 1001,
+    "on_move": [
+      1,
+      1,
+      10021
+    ],
+    "do_move": 0,
+    "on_stop": 0,
+    "on_evade": [],
+    "on_atk": [
+      1,
+      1,
+      10051
+    ]
   }
 ]

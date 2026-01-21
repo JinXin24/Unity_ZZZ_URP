@@ -21,7 +21,11 @@ public sealed partial class PlayerStateData : Luban.BeanBase
         { if(!_buf["info"].IsString) { throw new SerializationException(); }  Info = _buf["info"]; }
         { if(!_buf["anm_name"].IsString) { throw new SerializationException(); }  AnmName = _buf["anm_name"]; }
         { if(!_buf["on_anm_end"].IsNumber) { throw new SerializationException(); }  OnAnmEnd = _buf["on_anm_end"]; }
-        { var __json0 = _buf["on_move"]; if(!__json0.IsArray) { throw new SerializationException(); } OnMove = new System.Collections.Generic.List<int>(__json0.Count); foreach(JSONNode __e0 in __json0.Children) { int __v0;  { if(!__e0.IsNumber) { throw new SerializationException(); }  __v0 = __e0; }  OnMove.Add(__v0); }   }
+        { var __json0 = _buf["on_move"]; if(!__json0.IsArray) { throw new SerializationException(); } OnMove = new System.Collections.Generic.List<float>(__json0.Count); foreach(JSONNode __e0 in __json0.Children) { float __v0;  { if(!__e0.IsNumber) { throw new SerializationException(); }  __v0 = __e0; }  OnMove.Add(__v0); }   }
+        { if(!_buf["do_move"].IsNumber) { throw new SerializationException(); }  DoMove = _buf["do_move"]; }
+        { if(!_buf["on_stop"].IsNumber) { throw new SerializationException(); }  OnStop = _buf["on_stop"]; }
+        { var __json0 = _buf["on_evade"]; if(!__json0.IsArray) { throw new SerializationException(); } OnEvade = new System.Collections.Generic.List<int>(__json0.Count); foreach(JSONNode __e0 in __json0.Children) { int __v0;  { if(!__e0.IsNumber) { throw new SerializationException(); }  __v0 = __e0; }  OnEvade.Add(__v0); }   }
+        { var __json0 = _buf["on_atk"]; if(!__json0.IsArray) { throw new SerializationException(); } OnAtk = new System.Collections.Generic.List<float>(__json0.Count); foreach(JSONNode __e0 in __json0.Children) { float __v0;  { if(!__e0.IsNumber) { throw new SerializationException(); }  __v0 = __e0; }  OnAtk.Add(__v0); }   }
     }
 
     public static PlayerStateData DeserializePlayerStateData(JSONNode _buf)
@@ -48,7 +52,23 @@ public sealed partial class PlayerStateData : Luban.BeanBase
     /// <summary>
     /// 当进行移动<br/>前摇/后摇/下一个状态
     /// </summary>
-    public readonly System.Collections.Generic.List<int> OnMove;
+    public readonly System.Collections.Generic.List<float> OnMove;
+    /// <summary>
+    /// 移动旋转(是否接受鼠标)
+    /// </summary>
+    public readonly int DoMove;
+    /// <summary>
+    /// 当停止移动
+    /// </summary>
+    public readonly int OnStop;
+    /// <summary>
+    /// 当闪避
+    /// </summary>
+    public readonly System.Collections.Generic.List<int> OnEvade;
+    /// <summary>
+    /// 当进行普攻
+    /// </summary>
+    public readonly System.Collections.Generic.List<float> OnAtk;
    
     public const int __ID__ = -490446374;
     public override int GetTypeId() => __ID__;
@@ -65,6 +85,10 @@ public sealed partial class PlayerStateData : Luban.BeanBase
         + "anmName:" + AnmName + ","
         + "onAnmEnd:" + OnAnmEnd + ","
         + "onMove:" + Luban.StringUtil.CollectionToString(OnMove) + ","
+        + "doMove:" + DoMove + ","
+        + "onStop:" + OnStop + ","
+        + "onEvade:" + Luban.StringUtil.CollectionToString(OnEvade) + ","
+        + "onAtk:" + Luban.StringUtil.CollectionToString(OnAtk) + ","
         + "}";
     }
 }
