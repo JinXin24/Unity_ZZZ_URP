@@ -7,7 +7,8 @@ public class Main : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        GameDefine.Init();  
+        GameDefine.Init();
+        Debug.Log(DataMgr.Instance.playerStateData.DataList.Count);
     }
 
     // Update is called once per frame

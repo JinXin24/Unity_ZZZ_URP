@@ -3,20 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Calm\\Desktop\\computer\\project\\Unity_ZZZ_URP\\ZZZ\\Unity_ZZZ_URP\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D8D71CE0-9832-7E80-5F01-C174E8735134}|Assembly-CSharp.csproj|c:\\users\\calm\\desktop\\computer\\project\\unity_zzz_urp\\zzz\\unity_zzz_urp\\assets\\jinxinframework\\misc\\ucameracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D8D71CE0-9832-7E80-5F01-C174E8735134}|Assembly-CSharp.csproj|solutionrelative:assets\\jinxinframework\\misc\\ucameracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D8D71CE0-9832-7E80-5F01-C174E8735134}|Assembly-CSharp.csproj|c:\\users\\calm\\desktop\\computer\\project\\unity_zzz_urp\\zzz\\unity_zzz_urp\\assets\\scripts\\tool\\poolmanager\\vfx_poolmanager\\effectitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8D71CE0-9832-7E80-5F01-C174E8735134}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\tool\\poolmanager\\vfx_poolmanager\\effectitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D8D71CE0-9832-7E80-5F01-C174E8735134}|Assembly-CSharp.csproj|c:\\users\\calm\\desktop\\computer\\project\\unity_zzz_urp\\zzz\\unity_zzz_urp\\assets\\zzz\\script\\player\\service\\animationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D8D71CE0-9832-7E80-5F01-C174E8735134}|Assembly-CSharp.csproj|solutionrelative:assets\\zzz\\script\\player\\service\\animationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D8D71CE0-9832-7E80-5F01-C174E8735134}|Assembly-CSharp.csproj|c:\\users\\calm\\desktop\\computer\\project\\unity_zzz_urp\\zzz\\unity_zzz_urp\\assets\\zzz\\script\\player\\service\\hitservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8D71CE0-9832-7E80-5F01-C174E8735134}|Assembly-CSharp.csproj|solutionrelative:assets\\zzz\\script\\player\\service\\hitservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8D71CE0-9832-7E80-5F01-C174E8735134}|Assembly-CSharp.csproj|C:\\Users\\Calm\\Desktop\\computer\\project\\Unity_ZZZ_URP\\ZZZ\\Unity_ZZZ_URP\\assets\\jinxinframework\\misc\\fsmservicebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8D71CE0-9832-7E80-5F01-C174E8735134}|Assembly-CSharp.csproj|solutionrelative:assets\\jinxinframework\\misc\\fsmservicebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D8D71CE0-9832-7E80-5F01-C174E8735134}|Assembly-CSharp.csproj|C:\\Users\\Calm\\Desktop\\computer\\project\\Unity_ZZZ_URP\\ZZZ\\Unity_ZZZ_URP\\assets\\zzz\\script\\player\\fsm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D8D71CE0-9832-7E80-5F01-C174E8735134}|Assembly-CSharp.csproj|solutionrelative:assets\\zzz\\script\\player\\fsm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D8D71CE0-9832-7E80-5F01-C174E8735134}|Assembly-CSharp.csproj|C:\\Users\\Calm\\Desktop\\computer\\project\\Unity_ZZZ_URP\\ZZZ\\Unity_ZZZ_URP\\assets\\jinxinframework\\misc\\fsmservicebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D8D71CE0-9832-7E80-5F01-C174E8735134}|Assembly-CSharp.csproj|solutionrelative:assets\\jinxinframework\\misc\\fsmservicebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D8D71CE0-9832-7E80-5F01-C174E8735134}|Assembly-CSharp.csproj|C:\\Users\\Calm\\Desktop\\computer\\project\\Unity_ZZZ_URP\\ZZZ\\Unity_ZZZ_URP\\assets\\zzz\\script\\player\\service\\animationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8D71CE0-9832-7E80-5F01-C174E8735134}|Assembly-CSharp.csproj|solutionrelative:assets\\zzz\\script\\player\\service\\animationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8D71CE0-9832-7E80-5F01-C174E8735134}|Assembly-CSharp.csproj|C:\\Users\\Calm\\Desktop\\computer\\project\\Unity_ZZZ_URP\\ZZZ\\Unity_ZZZ_URP\\assets\\jinxinframework\\misc\\ucameracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8D71CE0-9832-7E80-5F01-C174E8735134}|Assembly-CSharp.csproj|solutionrelative:assets\\jinxinframework\\misc\\ucameracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D8D71CE0-9832-7E80-5F01-C174E8735134}|Assembly-CSharp.csproj|C:\\Users\\Calm\\Desktop\\computer\\project\\Unity_ZZZ_URP\\ZZZ\\Unity_ZZZ_URP\\assets\\zzz\\script\\player\\core\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -70,13 +78,13 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "FSM.cs",
               "DocumentMoniker": "C:\\Users\\Calm\\Desktop\\computer\\project\\Unity_ZZZ_URP\\ZZZ\\Unity_ZZZ_URP\\Assets\\ZZZ\\Script\\Player\\FSM.cs",
               "RelativeDocumentMoniker": "Assets\\ZZZ\\Script\\Player\\FSM.cs",
               "ToolTip": "C:\\Users\\Calm\\Desktop\\computer\\project\\Unity_ZZZ_URP\\ZZZ\\Unity_ZZZ_URP\\Assets\\ZZZ\\Script\\Player\\FSM.cs",
               "RelativeToolTip": "Assets\\ZZZ\\Script\\Player\\FSM.cs",
-              "ViewState": "AgIAAFsAAAAAAAAAAAAmwGsAAAAHAAAAAAAAAA==",
+              "ViewState": "AgIAACUBAAAAAAAAAADwv20BAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-20T07:40:31.176Z",
               "IsPinned": true
@@ -84,14 +92,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "UCameraController.cs",
-              "DocumentMoniker": "C:\\Users\\Calm\\Desktop\\computer\\project\\Unity_ZZZ_URP\\ZZZ\\Unity_ZZZ_URP\\Assets\\JinXinFramework\\Misc\\UCameraController.cs",
-              "RelativeDocumentMoniker": "Assets\\JinXinFramework\\Misc\\UCameraController.cs",
-              "ToolTip": "C:\\Users\\Calm\\Desktop\\computer\\project\\Unity_ZZZ_URP\\ZZZ\\Unity_ZZZ_URP\\Assets\\JinXinFramework\\Misc\\UCameraController.cs",
-              "RelativeToolTip": "Assets\\JinXinFramework\\Misc\\UCameraController.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAIwDEAAABYAAAAAAAAAA==",
+              "Title": "EffectItem.cs",
+              "DocumentMoniker": "C:\\Users\\Calm\\Desktop\\computer\\project\\Unity_ZZZ_URP\\ZZZ\\Unity_ZZZ_URP\\Assets\\Scripts\\Tool\\PoolManager\\VFX_PoolManager\\EffectItem.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Tool\\PoolManager\\VFX_PoolManager\\EffectItem.cs",
+              "ToolTip": "C:\\Users\\Calm\\Desktop\\computer\\project\\Unity_ZZZ_URP\\ZZZ\\Unity_ZZZ_URP\\Assets\\Scripts\\Tool\\PoolManager\\VFX_PoolManager\\EffectItem.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Tool\\PoolManager\\VFX_PoolManager\\EffectItem.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAUwC8AAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-21T08:56:46.519Z",
+              "WhenOpened": "2026-01-22T14:33:59.061Z",
               "EditorCaption": ""
             },
             {
@@ -100,32 +108,68 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
+              "Title": "HitService.cs",
+              "DocumentMoniker": "C:\\Users\\Calm\\Desktop\\computer\\project\\Unity_ZZZ_URP\\ZZZ\\Unity_ZZZ_URP\\Assets\\ZZZ\\Script\\Player\\Service\\HitService.cs",
+              "RelativeDocumentMoniker": "Assets\\ZZZ\\Script\\Player\\Service\\HitService.cs",
+              "ToolTip": "C:\\Users\\Calm\\Desktop\\computer\\project\\Unity_ZZZ_URP\\ZZZ\\Unity_ZZZ_URP\\Assets\\ZZZ\\Script\\Player\\Service\\HitService.cs",
+              "RelativeToolTip": "Assets\\ZZZ\\Script\\Player\\Service\\HitService.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAADwvxkAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T05:11:41.297Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "Main.cs",
               "DocumentMoniker": "C:\\Users\\Calm\\Desktop\\computer\\project\\Unity_ZZZ_URP\\ZZZ\\Unity_ZZZ_URP\\Assets\\ZZZ\\Script\\Player\\Core\\Main.cs",
               "RelativeDocumentMoniker": "Assets\\ZZZ\\Script\\Player\\Core\\Main.cs",
               "ToolTip": "C:\\Users\\Calm\\Desktop\\computer\\project\\Unity_ZZZ_URP\\ZZZ\\Unity_ZZZ_URP\\Assets\\ZZZ\\Script\\Player\\Core\\Main.cs",
               "RelativeToolTip": "Assets\\ZZZ\\Script\\Player\\Core\\Main.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvwkAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvw8AAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-20T19:12:40.292Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "AnimationService.cs",
               "DocumentMoniker": "C:\\Users\\Calm\\Desktop\\computer\\project\\Unity_ZZZ_URP\\ZZZ\\Unity_ZZZ_URP\\Assets\\ZZZ\\Script\\Player\\Service\\AnimationService.cs",
               "RelativeDocumentMoniker": "Assets\\ZZZ\\Script\\Player\\Service\\AnimationService.cs",
               "ToolTip": "C:\\Users\\Calm\\Desktop\\computer\\project\\Unity_ZZZ_URP\\ZZZ\\Unity_ZZZ_URP\\Assets\\ZZZ\\Script\\Player\\Service\\AnimationService.cs",
               "RelativeToolTip": "Assets\\ZZZ\\Script\\Player\\Service\\AnimationService.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAIwCQAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAwB4AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-20T14:46:13.96Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-20T14:46:13.96Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FSMServiceBase.cs",
+              "DocumentMoniker": "C:\\Users\\Calm\\Desktop\\computer\\project\\Unity_ZZZ_URP\\ZZZ\\Unity_ZZZ_URP\\Assets\\JinXinFramework\\Misc\\FSMServiceBase.cs",
+              "RelativeDocumentMoniker": "Assets\\JinXinFramework\\Misc\\FSMServiceBase.cs",
+              "ToolTip": "C:\\Users\\Calm\\Desktop\\computer\\project\\Unity_ZZZ_URP\\ZZZ\\Unity_ZZZ_URP\\Assets\\JinXinFramework\\Misc\\FSMServiceBase.cs",
+              "RelativeToolTip": "Assets\\JinXinFramework\\Misc\\FSMServiceBase.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAgwAQAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-20T15:16:25.612Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "UCameraController.cs",
+              "DocumentMoniker": "C:\\Users\\Calm\\Desktop\\computer\\project\\Unity_ZZZ_URP\\ZZZ\\Unity_ZZZ_URP\\Assets\\JinXinFramework\\Misc\\UCameraController.cs",
+              "RelativeDocumentMoniker": "Assets\\JinXinFramework\\Misc\\UCameraController.cs",
+              "ToolTip": "C:\\Users\\Calm\\Desktop\\computer\\project\\Unity_ZZZ_URP\\ZZZ\\Unity_ZZZ_URP\\Assets\\JinXinFramework\\Misc\\UCameraController.cs",
+              "RelativeToolTip": "Assets\\JinXinFramework\\Misc\\UCameraController.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAAwC8AAABWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-21T08:56:46.519Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "LubanMenuItem.cs",
               "DocumentMoniker": "C:\\Users\\Calm\\Desktop\\computer\\project\\Unity_ZZZ_URP\\ZZZ\\Unity_ZZZ_URP\\Assets\\JinXinFramework\\Luban\\Editor\\LubanMenuItem.cs",
               "RelativeDocumentMoniker": "Assets\\JinXinFramework\\Luban\\Editor\\LubanMenuItem.cs",
@@ -137,19 +181,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FSMServiceBase.cs",
-              "DocumentMoniker": "C:\\Users\\Calm\\Desktop\\computer\\project\\Unity_ZZZ_URP\\ZZZ\\Unity_ZZZ_URP\\Assets\\JinXinFramework\\Misc\\FSMServiceBase.cs",
-              "RelativeDocumentMoniker": "Assets\\JinXinFramework\\Misc\\FSMServiceBase.cs",
-              "ToolTip": "C:\\Users\\Calm\\Desktop\\computer\\project\\Unity_ZZZ_URP\\ZZZ\\Unity_ZZZ_URP\\Assets\\JinXinFramework\\Misc\\FSMServiceBase.cs",
-              "RelativeToolTip": "Assets\\JinXinFramework\\Misc\\FSMServiceBase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAowBMAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-20T15:16:25.612Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "BaseManager.cs",
               "DocumentMoniker": "C:\\Users\\Calm\\Desktop\\computer\\project\\Unity_ZZZ_URP\\ZZZ\\Unity_ZZZ_URP\\Assets\\JinXinFramework\\Singleton\\BaseManager.cs",
               "RelativeDocumentMoniker": "Assets\\JinXinFramework\\Singleton\\BaseManager.cs",
@@ -161,7 +193,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "GameDefine.cs",
               "DocumentMoniker": "C:\\Users\\Calm\\Desktop\\computer\\project\\Unity_ZZZ_URP\\ZZZ\\Unity_ZZZ_URP\\Assets\\ZZZ\\Script\\Player\\Core\\GameDefine.cs",
               "RelativeDocumentMoniker": "Assets\\ZZZ\\Script\\Player\\Core\\GameDefine.cs",
@@ -173,7 +205,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "SingletonBase.cs",
               "DocumentMoniker": "C:\\Users\\Calm\\Desktop\\computer\\project\\Unity_ZZZ_URP\\ZZZ\\Unity_ZZZ_URP\\Assets\\JinXinFramework\\Misc\\SingletonBase.cs",
               "RelativeDocumentMoniker": "Assets\\JinXinFramework\\Misc\\SingletonBase.cs",
@@ -184,7 +216,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "item.cs",
               "DocumentMoniker": "C:\\Users\\Calm\\Desktop\\computer\\project\\Unity_ZZZ_URP\\ZZZ\\Unity_ZZZ_URP\\Assets\\ZZZ\\Script\\Table\\demo\\item.cs",
               "RelativeDocumentMoniker": "Assets\\ZZZ\\Script\\Table\\demo\\item.cs",
@@ -195,7 +227,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "DataMgr.cs",
               "DocumentMoniker": "C:\\Users\\Calm\\Desktop\\computer\\project\\Unity_ZZZ_URP\\ZZZ\\Unity_ZZZ_URP\\Assets\\ZZZ\\Script\\DataMgr.cs",
               "RelativeDocumentMoniker": "Assets\\ZZZ\\Script\\DataMgr.cs",
@@ -207,7 +239,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "SingletonMonobehaviour.cs",
               "DocumentMoniker": "C:\\Users\\Calm\\Desktop\\computer\\project\\Unity_ZZZ_URP\\ZZZ\\Unity_ZZZ_URP\\Assets\\JinXinFramework\\Misc\\SingletonMonobehaviour.cs",
               "RelativeDocumentMoniker": "Assets\\JinXinFramework\\Misc\\SingletonMonobehaviour.cs",
@@ -219,7 +251,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "NewBehaviourScript.cs",
               "DocumentMoniker": "C:\\Users\\Calm\\Desktop\\computer\\project\\Unity_ZZZ_URP\\ZZZ\\Unity_ZZZ_URP\\Assets\\ZZZ\\Script\\Test\\NewBehaviourScript.cs",
               "RelativeDocumentMoniker": "Assets\\ZZZ\\Script\\Test\\NewBehaviourScript.cs",
@@ -230,7 +262,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "TbPlayerStates.cs",
               "DocumentMoniker": "C:\\Users\\Calm\\Desktop\\computer\\project\\Unity_ZZZ_URP\\ZZZ\\Unity_ZZZ_URP\\Assets\\ZZZ\\Script\\Table\\TbPlayerStates.cs",
               "RelativeDocumentMoniker": "Assets\\ZZZ\\Script\\Table\\TbPlayerStates.cs",

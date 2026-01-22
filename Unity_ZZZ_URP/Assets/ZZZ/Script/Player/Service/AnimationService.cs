@@ -36,6 +36,10 @@ public class AnimationService : FSMServiceBase
         now_animClip_name = state.excel_config.AnmName;
         Debug.Log(now_animClip_name);
         player.animator.Play(now_animClip_name, 0, 0f);
+        
+        //float fadeTime = 0.15f; // 直接填秒数，0.1~0.2秒视觉最丝滑
+        //player.animator.CrossFadeInFixedTime(now_animClip_name, fadeTime, 0);
+
         player.animator.Update(0);
     }
 
