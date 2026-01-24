@@ -11,11 +11,18 @@ public class FSM : MonoBehaviour
 {
     public PlayerState currentState;
     public UnitData unitData;
+    public UnitAttData unitAttData;
+    public UnitAttEntity unitAttEntity;
+
     Dictionary<int, PlayerState> stateData = new Dictionary<int, PlayerState>();
     public Dictionary<int, Dictionary<StateEventType, List<Action>>> actions = new Dictionary<int, Dictionary<StateEventType, List<Action>>>();
     [HideInInspector] public Animator animator;
+    [HideInInspector]
+    public int instance_id;
+
 
     public List<FSMServiceBase> fSMServices = new List<FSMServiceBase>();
+
     AnimationService animationService;
     ObjService objService;
     HitService hitService;
@@ -39,11 +46,18 @@ public class FSM : MonoBehaviour
     Dictionary<string, GameObject> handPoint = new Dictionary<string, GameObject>();
     private void Awake()
     {
+        instance_id = this.gameObject.GetInstanceID();
         _transform = this.transform;
         animator = GetComponent<Animator>();
         if(DataMgr.Instance.unitData.DataMap.ContainsKey(id))
         {
             unitData = DataMgr.Instance.unitData.DataMap[id];
+            if (DataMgr.Instance.unitAttData.DataMap.ContainsKey(unitData.AttId))
+            {
+                unitAttData = DataMgr.Instance.unitAttData.DataMap[(unitData.AttId)];
+                unitAttEntity = UnitAttEntity.Create(unitAttData.Id);
+            }
+           
         }
         else
         {
@@ -105,9 +119,44 @@ public class FSM : MonoBehaviour
                     AddListener(item.Key, StateEventType.update, CheckPendingAtkInput);
                 }
 
+                if(item.Value.excel_config.DoRotate != 0)
+                {
+                    AddListener(item.Key, StateEventType.update, DORotate);
+                }
+
             }
         }
         
+    }
+    private void DORotate()
+    {
+        if (animationService.normalizedTime <= currentState.excel_config.DoRotate)
+        {
+            var x = UInput.GetAxis_Horizontal();
+            var z = UInput.GetAxis_Vertical();
+            if (x != 0 || z != 0)
+            {
+                Vector3 inputDirection = new Vector3(x, 0.0f, z).normalized;
+                //2.Atan2的优点在于 如果 X2 - X1 等于0 依然可以计算，但是Atan函数就会导致程序出错。
+                //3.Mathf.Atan()返回值的范围是[-π/2,π/2]
+                //正切函数求弧度
+                //正切函数 * 弧度转度
+
+
+                //第一:先求输入的角度
+                //第二:加上当前相机的Y轴旋转的量
+                //第三:得到目标朝向的角度
+                _targetRotation = Mathf.Atan2(inputDirection.x, inputDirection.z) * Mathf.Rad2Deg
+                    + GameDefine._Camera.eulerAngles.y;
+
+                //做一个插值运动
+                float rotation = Mathf.SmoothDampAngle(_transform.eulerAngles.y, _targetRotation,
+                    ref _rotationVelocity, 0.025f);
+                //角色先旋转到目标角度去
+                _transform.rotation = Quaternion.Euler(0.0f, rotation, 0.0f);
+
+            }
+        }
     }
 
     private void OnAtk()

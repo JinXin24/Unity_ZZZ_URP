@@ -6,6 +6,6 @@ public class EffectObj : MonoBehaviour
 {
     private void OnEnable()
     {
-        Debug.Log("EffectObj");
+        
     }
 }

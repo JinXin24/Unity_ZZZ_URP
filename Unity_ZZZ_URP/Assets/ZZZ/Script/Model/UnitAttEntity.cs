@@ -13,12 +13,17 @@ public class UnitAttEntity
 
     public static UnitAttEntity Create(int id)
     {
-        UnitAttData data = DataMgr.Instance.unitAttData[id];
-        UnitAttEntity entity = new UnitAttEntity();
-        entity.id = data.Id;
-        entity.hp = data.Hp;
-        entity.atk = data.Atk;
-        entity.critical_hit_rate = data.CriticalHitRate;
-        return entity;
+        if (DataMgr.Instance.unitAttData.DataMap.ContainsKey(id))
+        {
+            UnitAttData data = DataMgr.Instance.unitAttData.DataMap[id];
+            UnitAttEntity entity = new UnitAttEntity();
+            entity.id = data.Id;
+            entity.hp = data.Hp;
+            entity.atk = data.Atk;
+            entity.critical_hit_rate = data.CriticalHitRate;
+            return entity;
+        }
+       return null;
+        
     }
 }

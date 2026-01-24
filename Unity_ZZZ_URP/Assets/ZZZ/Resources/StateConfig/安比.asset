@@ -70,7 +70,15 @@ MonoBehaviour:
       act: 1
       force: 0
       loop: 0
-    hitConfigs: []
+    hitConfigs:
+    - trigger: 0.2
+      end: 0.5
+      type: 0
+      begin: anbi/Bip001/Anbi_Weapon_02
+      length: -1
+      hitObj: 
+      box_center: {x: 0, y: 0, z: 0}
+      box_size: {x: 0, y: 0, z: 0}
   - id: 10062
     info: "10062_\u666E\u653B2_\u7ED3\u675F"
     obj_States: []
@@ -92,7 +100,23 @@ MonoBehaviour:
       act: 1
       force: 0
       loop: 0
-    hitConfigs: []
+    hitConfigs:
+    - trigger: 0.1
+      end: 0.3
+      type: 0
+      begin: anbi/Bip001/Anbi_Weapon_02
+      length: -1
+      hitObj: 
+      box_center: {x: 0, y: 0, z: 0}
+      box_size: {x: 0, y: 0, z: 0}
+    - trigger: 0.3
+      end: 0.55
+      type: 0
+      begin: anbi/Bip001/Anbi_Weapon_02
+      length: -1
+      hitObj: 
+      box_center: {x: 0, y: 0, z: 0}
+      box_size: {x: 0, y: 0, z: 0}
   - id: 10072
     info: "10072_\u666E\u653B3_\u7ED3\u675F"
     obj_States: []
@@ -121,7 +145,15 @@ MonoBehaviour:
       act: 1
       force: 0
       loop: 0
-    hitConfigs: []
+    hitConfigs:
+    - trigger: 0
+      end: 1
+      type: 0
+      begin: anbi/Bip001/Anbi_Weapon_02
+      length: -1
+      hitObj: 
+      box_center: {x: 0, y: 0, z: 0}
+      box_size: {x: 0, y: 0, z: 0}
   - id: 10082
     info: "10082_\u666E\u653B4_\u7ED3\u675F"
     obj_States: []

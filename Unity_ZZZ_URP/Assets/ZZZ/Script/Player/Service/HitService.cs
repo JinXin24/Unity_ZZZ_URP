@@ -57,16 +57,13 @@ public class HitService : FSMServiceBase
         if(config.type ==0)
         {
             Vector3 end = begin + obj.transform.right * config.length;
-            if(last_end == Vector3.zero)
-            {
-                Linecast(begin, end, config, state);
-            }
+            Linecast(begin, end, config, state);
         }
     }
 
     public bool Linecast(Vector3 begin,Vector3 end, HitConfig config, PlayerState state)
     {
-        Debug.DrawLine(begin, end, Color.red, 1f);
+        
         var result = Physics.Linecast(begin, end, out var hitInfo, player.GetEnemyLayerMask(), QueryTriggerInteraction.Collide);
 
         if (result)
@@ -79,7 +76,20 @@ public class HitService : FSMServiceBase
 
     public void OnHit(Vector3 begin,HitConfig config, PlayerState state,RaycastHit hitInfo)
     {
-        
+        var fsm = hitInfo.transform.GetComponent<FSM>();
+        if (fsm != null)
+        {
+            if(hit_target.Contains(fsm.instance_id*100+(int)(config.trigger*100)) == false)
+            {
+                hit_target.Add(fsm.instance_id * 100 + (int)(config.trigger * 100));
+                //1.命中特效
+                VFXMgr.Instance.ReuseHitObj(hitInfo.point);
+
+                //2.命中音效
+                VFXMgr.Instance.ReuseHitSound(hitInfo.point);
+
+            }
+        }
     }
 
     public override void ReLoop(PlayerState state)
