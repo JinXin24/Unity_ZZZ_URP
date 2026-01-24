@@ -2,6 +2,7 @@ using cfg;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Net;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
@@ -9,27 +10,45 @@ using UnityEngine.UIElements;
 public class FSM : MonoBehaviour
 {
     public PlayerState currentState;
+    public UnitData unitData;
     Dictionary<int, PlayerState> stateData = new Dictionary<int, PlayerState>();
     public Dictionary<int, Dictionary<StateEventType, List<Action>>> actions = new Dictionary<int, Dictionary<StateEventType, List<Action>>>();
     [HideInInspector] public Animator animator;
 
     public List<FSMServiceBase> fSMServices = new List<FSMServiceBase>();
     AnimationService animationService;
+    ObjService objService;
+    HitService hitService;
     int service_count;
     float _targetRotation;
     [HideInInspector]
     public Transform _transform;
     float _rotationVelocity;
     float RotationSmoothTime = 0.05f;
-   
+
+    StateScriptableObject anmConfig;
+
+    public bool AI;
+    public int id;
+
 
     // 新增：攻击输入缓存变量
     private bool hasPendingAtkInput = false; // 是否有待处理的攻击输入
     private int pendingAtkStateId = -1;      // 待切换的攻击状态ID
+
+    Dictionary<string, GameObject> handPoint = new Dictionary<string, GameObject>();
     private void Awake()
     {
         _transform = this.transform;
         animator = GetComponent<Animator>();
+        if(DataMgr.Instance.unitData.DataMap.ContainsKey(id))
+        {
+            unitData = DataMgr.Instance.unitData.DataMap[id];
+        }
+        else
+        {
+            Debug.Log("不包含"+ id);
+        }
         ServiceInit();
         StateInit();
         ToNext(1001);
@@ -37,6 +56,14 @@ public class FSM : MonoBehaviour
 
     private void StateInit()
     {
+        anmConfig = Resources.Load<StateScriptableObject>($"StateConfig/安比");
+        Dictionary<int, StateEntity> state_config = new Dictionary<int, StateEntity>();
+
+        foreach (var item in anmConfig.states)
+        {
+            state_config[item.id] = item;
+        }
+
         var playerStateData = DataMgr.Instance.playerStateData.DataList;
         if (playerStateData.Count > 0)
         {
@@ -45,38 +72,42 @@ public class FSM : MonoBehaviour
                 PlayerState p = new PlayerState();
                 p.excel_config = item;
                 p.id = item.Id;
+                p.stateEntity = state_config[p.id];
                 stateData[item.Id] = p;
 
             }
         }
-
-        foreach (var item in stateData)
+        if(AI == false)
         {
-            if (item.Value.excel_config.OnMove.Count > 0)
+            foreach (var item in stateData)
             {
-                AddListener(item.Key, StateEventType.update, OnMove);
-            }
-            if (item.Value.excel_config.DoMove == 1)
-            {
-                AddListener(item.Key, StateEventType.update, PlayerMove);
-            }
-            if (item.Value.excel_config.OnStop != 0)
-            {
-                AddListener(item.Key, StateEventType.update, OnStop);
-            }
-            
-            if(item.Value.excel_config.OnEvade.Count > 0)
-            {
-                AddListener(item.Key, StateEventType.update, OnEvade);
-            }
+                if (item.Value.excel_config.OnMove.Count > 0)
+                {
+                    AddListener(item.Key, StateEventType.update, OnMove);
+                }
+                if (item.Value.excel_config.DoMove == 1)
+                {
+                    AddListener(item.Key, StateEventType.update, PlayerMove);
+                }
+                if (item.Value.excel_config.OnStop != 0)
+                {
+                    AddListener(item.Key, StateEventType.update, OnStop);
+                }
 
-            if(item.Value.excel_config.OnAtk.Count> 0)
-            {
-                AddListener(item.Key, StateEventType.update, OnAtk);
-                AddListener(item.Key, StateEventType.update, CheckPendingAtkInput);
-            }
+                if (item.Value.excel_config.OnEvade.Count > 0)
+                {
+                    AddListener(item.Key, StateEventType.update, OnEvade);
+                }
 
+                if (item.Value.excel_config.OnAtk.Count > 0)
+                {
+                    AddListener(item.Key, StateEventType.update, OnAtk);
+                    AddListener(item.Key, StateEventType.update, CheckPendingAtkInput);
+                }
+
+            }
         }
+        
     }
 
     private void OnAtk()
@@ -227,6 +258,17 @@ public class FSM : MonoBehaviour
 
     private void Update()
     {
+        //if(AI==false)
+        //{
+        //    var obj = this.transform.Find("anbi/Bip001/Anbi_Weapon_02");
+
+        //    Vector3 begin = obj.transform.position;
+
+        //    Vector3 end = begin + obj.transform.right * -1;
+
+        //    Debug.DrawLine(begin, end, Color.red, 1f);
+        //}
+        
         if (currentState != null)
         {
             if (ServicesOnUpdate() == true)
@@ -316,6 +358,8 @@ public class FSM : MonoBehaviour
     private void ServiceInit()
     {
         animationService = AddService<AnimationService>();
+        objService = AddService<ObjService>();
+        hitService = AddService<HitService>();
         service_count = fSMServices.Count;
     }
 
@@ -348,12 +392,43 @@ public class FSM : MonoBehaviour
             }
         }
     }
+
+    internal GameObject GetHangPoint(string o_id)
+    {
+        if (handPoint.TryGetValue(o_id, out var x))
+            return x;
+        var go = _transform.Find(o_id);
+        if (go != null)
+        {
+            handPoint[o_id] = go.gameObject;
+            return go.gameObject;
+        }
+        else
+        {
+            handPoint[o_id] = null;
+            return null;
+        }
+    }
+
+    internal int GetEnemyLayerMask()
+    {
+        if (AI)
+        {
+            return GameDefine.Player_LayerMask;
+        }
+        else
+        {
+            return GameDefine.Enemy_LayerMask;
+
+        }
+    }
 }
 
 public class PlayerState
 {
     public int id;
     public PlayerStateData excel_config;
+    public StateEntity stateEntity;
 }
 
 

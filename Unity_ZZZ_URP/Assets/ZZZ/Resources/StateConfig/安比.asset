@@ -16,48 +16,134 @@ MonoBehaviour:
   - id: 1001
     info: "1001_\u5F85\u673A"
     obj_States: []
+    hitConfigs: []
   - id: 10021
     info: "10021_\u5F85\u673A\u8854\u63A5\u8DD1"
     obj_States: []
+    hitConfigs: []
   - id: 10022
     info: "10022_\u8DD1"
     obj_States: []
+    hitConfigs: []
   - id: 10023
     info: "10023_\u8DD1\u8854\u63A5\u5F85\u673A"
     obj_States: []
+    hitConfigs: []
   - id: 10031
     info: "10031_\u5411\u524D,\u5DE6,\u53F3,\u540E\u95EA\u907F"
     obj_States: []
+    hitConfigs: []
   - id: 10032
     info: "10032_\u65E0\u8F93\u5165\u95EA\u907F"
     obj_States: []
+    hitConfigs: []
   - id: 10051
     info: "10051_\u666E\u653B1"
-    obj_States: []
+    obj_States:
+    - info: "\u653B\u51FB"
+      trigger: 0.2
+      obj_id:
+      - effect_atk1
+      act: 1
+      force: 0
+      loop: 0
+    hitConfigs:
+    - trigger: 0.25
+      end: 0.5
+      type: 0
+      begin: anbi/Bip001/Anbi_Weapon_02
+      length: -1
+      hitObj: 
+      box_center: {x: 0, y: 0, z: 0}
+      box_size: {x: 0, y: 0, z: 0}
   - id: 10052
     info: "10052_\u666E\u653B1_\u7ED3\u675F"
     obj_States: []
+    hitConfigs: []
   - id: 10061
     info: "10061_\u666E\u653B2"
-    obj_States: []
+    obj_States:
+    - info: "\u666E\u653B2"
+      trigger: 0.2
+      obj_id:
+      - effect_atk2
+      act: 1
+      force: 0
+      loop: 0
+    hitConfigs: []
   - id: 10062
     info: "10062_\u666E\u653B2_\u7ED3\u675F"
     obj_States: []
+    hitConfigs: []
   - id: 10071
     info: "10071_\u666E\u653B3"
-    obj_States: []
+    obj_States:
+    - info: "\u70B91"
+      trigger: 0.23
+      obj_id:
+      - effect_atk3_1
+      act: 1
+      force: 0
+      loop: 0
+    - info: "\u70B92"
+      trigger: 0.45
+      obj_id:
+      - effect_atk3_2
+      act: 1
+      force: 0
+      loop: 0
+    hitConfigs: []
   - id: 10072
     info: "10072_\u666E\u653B3_\u7ED3\u675F"
     obj_States: []
+    hitConfigs: []
   - id: 10081
     info: "10081_\u666E\u653B4"
-    obj_States: []
+    obj_States:
+    - info: "\u70B91"
+      trigger: 0.12
+      obj_id:
+      - effect_atk4_1
+      act: 1
+      force: 0
+      loop: 0
+    - info: "\u70B92"
+      trigger: 0.3
+      obj_id:
+      - effect_atk4_2
+      act: 1
+      force: 0
+      loop: 0
+    - info: "\u70B93"
+      trigger: 0.55
+      obj_id:
+      - effect_atk4_3
+      act: 1
+      force: 0
+      loop: 0
+    hitConfigs: []
   - id: 10082
     info: "10082_\u666E\u653B4_\u7ED3\u675F"
     obj_States: []
+    hitConfigs: []
   - id: 10091
     info: "10091_\u666E\u653B4_Perfect"
-    obj_States: []
+    obj_States:
+    - info: "\u70B91"
+      trigger: 0.08
+      obj_id:
+      - effect_atk4_Perfect_1
+      act: 1
+      force: 1
+      loop: 0
+    - info: "\u70B92"
+      trigger: 0
+      obj_id: []
+      act: 0
+      force: 0
+      loop: 0
+    hitConfigs: []
   - id: 10092
     info: "10092_\u666E\u653B4_Perfect_End"
     obj_States: []
+    hitConfigs: []

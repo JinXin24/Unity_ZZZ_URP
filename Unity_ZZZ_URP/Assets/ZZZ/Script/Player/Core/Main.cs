@@ -8,7 +8,7 @@ public class Main : MonoBehaviour
     void Awake()
     {
         GameDefine.Init();
-        Debug.Log(DataMgr.Instance.playerStateData.DataList.Count);
+       
     }
 
     // Update is called once per frame

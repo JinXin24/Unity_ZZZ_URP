@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1001,
+    "info": "安比",
+    "prefab_path": "",
+    "att_id": 1
+  },
+  {
+    "id": 1002,
+    "info": "雅",
+    "prefab_path": "",
+    "att_id": 2
+  },
+  {
+    "id": 2001,
+    "info": "Boss1",
+    "prefab_path": "",
+    "att_id": 3
+  }
+]

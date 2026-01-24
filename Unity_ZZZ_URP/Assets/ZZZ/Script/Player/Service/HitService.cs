@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class HitService : FSMServiceBase
@@ -34,6 +35,51 @@ public class HitService : FSMServiceBase
     public override void OnUpdate(float normalizedTime, PlayerState state)
     {
         base.OnUpdate(normalizedTime, state);
+        var configs = state.stateEntity.hitConfigs;
+        if(configs != null && configs.Count >0)
+        {
+            for(int i=0; i< configs.Count; i++)
+            {
+                var e = configs[i];
+                if(normalizedTime >= e.trigger && normalizedTime <= e.end)
+                {
+                    DO(e,state);
+                    SetExcuted(i);
+                }
+            }
+        } 
+    }
+
+    private void DO(HitConfig config, PlayerState state)
+    {
+        var obj = player.GetHangPoint(config.begin);
+        Vector3 begin = obj.transform.position;
+        if(config.type ==0)
+        {
+            Vector3 end = begin + obj.transform.right * config.length;
+            if(last_end == Vector3.zero)
+            {
+                Linecast(begin, end, config, state);
+            }
+        }
+    }
+
+    public bool Linecast(Vector3 begin,Vector3 end, HitConfig config, PlayerState state)
+    {
+        Debug.DrawLine(begin, end, Color.red, 1f);
+        var result = Physics.Linecast(begin, end, out var hitInfo, player.GetEnemyLayerMask(), QueryTriggerInteraction.Collide);
+
+        if (result)
+        {
+            OnHit(begin,config,state,hitInfo);
+        }
+
+        return false;
+    }
+
+    public void OnHit(Vector3 begin,HitConfig config, PlayerState state,RaycastHit hitInfo)
+    {
+        
     }
 
     public override void ReLoop(PlayerState state)

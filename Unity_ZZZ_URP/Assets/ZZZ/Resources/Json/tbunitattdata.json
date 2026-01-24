@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "hp": 1000,
+    "atk": 50,
+    "critical_hit_rate": 0.2,
+    "critical_hit_multiple": 1.5
+  },
+  {
+    "id": 2,
+    "hp": 1000,
+    "atk": 50,
+    "critical_hit_rate": 0.2,
+    "critical_hit_multiple": 1.5
+  },
+  {
+    "id": 3,
+    "hp": 3000,
+    "atk": 50,
+    "critical_hit_rate": 0,
+    "critical_hit_multiple": 1
+  }
+]

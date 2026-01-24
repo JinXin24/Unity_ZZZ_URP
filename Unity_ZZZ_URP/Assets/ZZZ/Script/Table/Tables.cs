@@ -15,16 +15,22 @@ namespace cfg
 public partial class Tables
 {
     public TbPlayerStateData TbPlayerStateData {get; }
+    public TbUnitAttData TbUnitAttData {get; }
+    public TbUnitData TbUnitData {get; }
 
     public Tables(System.Func<string, JSONNode> loader)
     {
         TbPlayerStateData = new TbPlayerStateData(loader("tbplayerstatedata"));
+        TbUnitAttData = new TbUnitAttData(loader("tbunitattdata"));
+        TbUnitData = new TbUnitData(loader("tbunitdata"));
         ResolveRef();
     }
     
     private void ResolveRef()
     {
         TbPlayerStateData.ResolveRef(this);
+        TbUnitAttData.ResolveRef(this);
+        TbUnitData.ResolveRef(this);
     }
 }
 

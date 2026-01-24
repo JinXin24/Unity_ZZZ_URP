@@ -33,7 +33,7 @@ public class StateScriptableObject : ScriptableObject, ISerializationCallbackRec
         }
         else
         {
-            Debug.Log(2);
+            
             var dct = DataMgr.Instance.playerStateData.DataMap;
             if(dct.Count != states.Count)
             {
@@ -98,7 +98,10 @@ public class StateEntity
     public int id;
     public string info;
 
+    [Header("物体显示/隐藏控制")]
     public List<Obj_State> obj_States;
+    [Header("命中检测")]
+    public List<HitConfig> hitConfigs;
 }
 
 [System.Serializable]
@@ -121,4 +124,31 @@ public class Obj_State
 
     [Header("循环执行(循环动作)")]
     public bool loop;
+}
+
+[System.Serializable]
+public class HitConfig
+{
+    [Header("触发点")]
+    public float trigger;
+    [Header("结束点")]
+    public float end;
+    [Header("类型:0射线 1盒子 2球体")]
+    public int type;
+    [Header("射线:起点  配置子物体的路径")]
+    public string begin;
+    [Header("射线长度")]
+    public float length;
+    [Header("命中特效")]
+    public string hitObj;
+
+    [Space(20)]
+    [Header("盒子中心点")]
+    public Vector3 box_center;
+    [Header("盒子大小")]
+    public Vector3 box_size;
+
+    //每一帧检测 感兴趣的范围 : 距离 xx角度
+
+
 }
